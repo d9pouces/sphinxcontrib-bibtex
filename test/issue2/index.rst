@@ -7,3 +7,4 @@ Contents
    doc2
 
 .. bibliography:: test.bib
+   :style: plain
