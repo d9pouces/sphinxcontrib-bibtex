@@ -1,6 +1,10 @@
 0.2.7 (in development)
 ----------------------
 
+* The alpha style is now default, so citations are labelled in a way
+  that is more standard for Sphinx. To get the old behaviour back, add
+  ``:style: plain`` to your bibliography directives.
+
 0.2.6 (2 March 2013)
 --------------------
 
