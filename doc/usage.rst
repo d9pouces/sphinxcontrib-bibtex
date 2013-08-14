@@ -202,6 +202,28 @@ There are a few ways to work around this problem:
 
 Hopefully, this limitation can be lifted in a future release.
 
+Filter listed citations
+~~~~~~~~~~~~~~~~~~~~~~~
+
+You may want order your citations by type, especially if you use the
+option ``:all:``. The option ``:filter:`` allow to filter citations
+with complex expressions (including regexps).
+Filter must be valid Python expressions, using classical `==`, `!=`,
+`<`, `>`, `<=`, `>=` operators. Use the `%` operator if you want to
+match against a regular expression. Any name without quotes is assumed
+to be an attribute of a citation (i.e., author, publisher, etc.).
+You may combine filters with parentheses and the ordinary boolean
+operators `and`, `or` and `not`
+
+Here are some examples of filters:
+
+* `type == "journal"`
+* `2008 < year < 2010`
+* `author % ".*toto.*"`
+* `author == publisher`
+* `(year == 2010) and (author % ".*toto.*")`
+
+
 KeyError When Using ``:style: plain``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
