@@ -220,8 +220,8 @@ Here are some examples of filters:
 * `type == "journal"`
 * `2008 < year < 2010`
 * `author % ".*toto.*"`
-* `author == publisher`
-* `(year == 2010) and (author % ".*toto.*")`
+* `author != publisher`
+* `(year == 2010) and not (author % ".*toto.*")`
 
 
 KeyError When Using ``:style: plain``
