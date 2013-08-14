@@ -31,7 +31,7 @@ from pybtex.plugin import find_plugin
 
 from sphinxcontrib.bibtex.nodes import bibliography
 
-COMPARATORS = {'Eq': ' == ', 'Lt': ' < ', 'GtE': ' >= ', 'Le': ' <= ', 'Gt': ' > '}
+COMPARATORS = {'Eq': ' == ', 'Lt': ' < ', 'GtE': ' >= ', 'Le': ' <= ', 'Gt': ' > ', 'LtE': ' <= ', 'NotEq': ' != '}
 
 
 def filter_parser(node):
